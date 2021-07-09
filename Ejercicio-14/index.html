@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>suma</title>
+</head>
+<body>
+
+    <div class="suma">
+        <h2>SUMA</h2>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                          <div class="mb-3">
+                            <label for="number" class="form-label">Introduce un número</label>
+                            <input id="n1" type="text" class="form-control"  >
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="number" class="form-label">Introduce un número</label>
+                            <input id="n2" type="text" class="form-control"  >
+                          </div>
+                    </div>
+
+                    <div class="col ">
+                        <div class="mb-3">
+                            <label for="result" class="form-label">Resultado</label>
+                            <input id="resultSuma" type="text" class="form-control"  >
+                          </div>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button onclick="suma(obtenerNumero('n1'),obtenerNumero('n2'))" class="btn btn-primary" type="button">Calcular suma</button>
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+<script src="prompt.js"></script>    
+</body>
+</html>
